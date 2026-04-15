@@ -1,53 +1,47 @@
-# LifeLeveler
+# 🥚 Eggress
 
-A gamified habit tracker that turns your daily routine into an engaging RPG game.  
-LifeLeveler focuses on motivation, consistency, and engagement in personal growth. It provides tools for turning mundane tasks into epic quests, helping users stay motivated, build discipline, and improve their lives efficiently.
+A minimalist mobile habit tracker with a unique gamification twist: every new habit is an egg that hatches and evolves as you stay consistent. 
+Eggress makes habit tracking fun, visual, and highly motivating by rewarding your daily discipline with visible growth.
 
-## Features
+## ✨ Features
 
-⚔️ **RPG Mechanics**
-* Earn Experience Points (XP) for completing real-life tasks
-* Level up your virtual character
-* Upgrade character stats (e.g., Strength, Intelligence) based on habit categories
-* Unlock virtual achievements and rewards
+🌱 **Evolution Mechanics**
+* Each habit is represented by a unique egg.
+* Progress through 5 distinct evolution stages (from a simple egg to a fully hatched creature) by completing tasks.
+* Visual representation of your dedication—the more consistent you are, the faster your egg grows!
 
 📅 **Habit & Task Tracking**
-* Create custom daily and weekly habits
-* Organize habits by categories and themes (Health, Study, Work, etc.)
-* Mark tasks as completed to claim rewards
-* Manage deadlines and recurring quests
+* Create custom habits tailored to your lifestyle.
+* Maintain habit streaks (consecutive days of completion) to boost progress.
+* Daily reminders and push notifications to keep you on track.
 
-📊 **Statistics & Progress Tracking**
-* Track your current habit streaks
-* View visual progress bars for leveling up
-* Review task history and completion rates
-* Monitor overall self-improvement statistics
+📊 **Statistics & Analytics**
+* Detailed progress tracking for each individual habit.
+* Visual charts showing your completion rate and current streaks.
+* History logs to review your past performance.
 
-⚙️ **Customization**
-* Light/Dark theme support
-* Customizable habit difficulty (gives different amounts of XP)
-* Daily reminders and push notifications
-* Profile and character management
+📱 **Mobile-First Design**
+* Clean, minimalist, and intuitive user interface optimized for mobile devices.
+* Light/Dark theme support for comfortable use at any time of day.
 
-## Problems Solved
-* **Low motivation** to complete mundane daily tasks and routines
-* **Lack of visible progress** in real-life self-improvement
-* **Inconsistency** in maintaining new, healthy habits
-* **Monotony** of traditional checklist and to-do applications
-* **Procrastination** caused by a lack of immediate rewards
+## 🎯 Problems Solved
+* **Low motivation** to complete mundane daily tasks and routines.
+* **Lack of visual progress** in real-life self-improvement.
+* **Inconsistency** in maintaining new, healthy habits.
+* **Monotony** of traditional checklist and to-do applications.
 
-## Target Audience
-* **Students** - for managing study routines, completing homework, and maintaining work-life balance
-* **Self-improvement enthusiasts** - for tracking personal growth, fitness goals, and building discipline
-* **Gamers & IT professionals** - who want to apply familiar game mechanics and reward systems to real-life productivity
+## 👥 Target Audience
+* **Students** - for managing study routines and completing homework.
+* **Self-improvement enthusiasts** - for tracking personal growth and building discipline.
+* **Anyone** who struggles with procrastination and needs a visual, gamified push to build good habits.
 
-## Technologies
+## 🛠 Technologies
 * **Platform:** Android
-* **Language:** Kotlin 
-* **Framework:** Android SDK 
-* **Database:** SQLite (Room / SQLite-net)
-* **Architecture:** MVVM (Model-View-ViewModel)
+* **Language:** Kotlin
+* **Framework:** Android SDK
+* **Database:** SQLite (Room Database)
+* **Architecture Pattern:** MVVM (Model-View-ViewModel)
 
-## Team
-* **Yurii Vaidovych** - Full-Stack developer
-* **Oleksii Fedus** - Full-Stack developer
+## 🧑‍💻 Team
+* **Yurii Vaidovych** - Android Developer, Database Architect
+* **Oleksii Fedus** - Android Developer, UI/UX Designer
