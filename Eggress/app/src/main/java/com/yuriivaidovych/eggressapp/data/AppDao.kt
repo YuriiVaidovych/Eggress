@@ -30,4 +30,8 @@ interface AppDao {
 
     @Query("SELECT COUNT(*) FROM habit_logs")
     suspend fun getLogsCount(): Int
+
+    @Update suspend fun updateHabit(habit: Habit)
+
+    @Delete suspend fun deleteHabit(habit: Habit)
 }

@@ -20,7 +20,7 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideAppDatabase(@ApplicationContext context: Context): AppDatabase {
-        // Створюємо окремий Scope для бази даних, щоб він не залежав від екранів
+        //окремий Scope для бази даних, щоб він не залежав від екранів
         val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
         return AppDatabase.getDatabase(context, applicationScope)
     }
