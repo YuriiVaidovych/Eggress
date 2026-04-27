@@ -38,7 +38,6 @@ abstract class AppDatabase : RoomDatabase() {
                     val dao = database.appDao()
                     val colors = listOf("#FF5733", "#33FF57", "#3357FF", "#F333FF")
 
-                    // Створюємо по 15 записів у кожну таблицю
                     for (i in 1..15) {
                         val uId = dao.insertUser(User(login = "User_$i", email = "u$i@mail.com", password_hash = "p$i"))
 
