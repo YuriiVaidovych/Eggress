@@ -10,9 +10,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 
 @Composable
-fun LoginScreen(
-    onLoginSuccess: () -> Unit,
-    onNavigateToRegister: () -> Unit,
+fun RegistrationScreen(
+    onRegisterSuccess: () -> Unit,
+    onNavigateToLogin: () -> Unit,
     viewModel: AuthViewModel = hiltViewModel()
 ) {
     Column(
@@ -22,8 +22,7 @@ fun LoginScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Eggress", style = MaterialTheme.typography.headlineLarge)
-        Text(text = "Вхід у систему", style = MaterialTheme.typography.bodyLarge)
+        Text(text = "Реєстрація", style = MaterialTheme.typography.headlineLarge)
 
         Spacer(modifier = Modifier.height(32.dp))
 
@@ -40,45 +39,34 @@ fun LoginScreen(
         OutlinedTextField(
             value = viewModel.password.value,
             onValueChange = { viewModel.password.value = it },
-            label = { Text("Пароль") },
+            label = { Text("Пароль (мін. 6 символів)") },
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier.fillMaxWidth(),
             singleLine = true
         )
 
-        // Виведення помилки, якщо вона є
         viewModel.errorMessage.value?.let { error ->
             Spacer(modifier = Modifier.height(8.dp))
             Text(text = error, color = MaterialTheme.colorScheme.error)
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
-
-        // Кнопка "Забули пароль" (поки без логіки)
-        TextButton(
-            onClick = { /* TODO: Forgot Password logic */ },
-            modifier = Modifier.align(Alignment.End)
-        ) {
-            Text("Забули пароль?")
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(32.dp))
 
         if (viewModel.isLoading.value) {
             CircularProgressIndicator()
         } else {
             Button(
-                onClick = { viewModel.login(onLoginSuccess) },
+                onClick = { viewModel.register(onRegisterSuccess) },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text("Увійти")
+                Text("Створити акаунт")
             }
         }
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        TextButton(onClick = onNavigateToRegister) {
-            Text("Немає акаунту? Зареєструватися")
+        TextButton(onClick = onNavigateToLogin) {
+            Text("Вже є акаунт? Увійти")
         }
     }
 }
